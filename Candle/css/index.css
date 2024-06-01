@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'inter';
+  src: local('inter'),
+	   url('../fonts/Inter-Regular.otf') format('otf'),
+		 url('../fonts/Inter-Regular.woff') format('woff'),
+		 url('../fonts/Inter-Regular.woff2') format('woff2'),
+		 url('../fonts/Inter-Regular.eot') format('eot'),
+}
+
+/* @font-face {
+  font-family: 'interBold';
+  src: local('interBold'),
+	   url('../fonts/Inter-SemiBold.otf') format('otf'), 
+} */
+
+.reg {
+	font-family: inter;
+}
+
+.Shadow-header {
+	box-shadow: 0px 4px 24px 0px #0000001F;
+}
+.button-theme {
+	background-color: #4094F7;
+}
+.color-main-theme {
+	background: #F6FCFF;
+}
+.color-text-p {
+	color: rgba(132, 145, 154, 1);
+}
+
+.color-text-m {
+	color: rgba(37, 44, 50, 1);
+}
+
+.color-text-m-two {
+	color: rgba(25, 28, 48, 0.9);
+;
+}
+
+.color-a {
+	color: rgba(14, 115, 246, 1);
+}
+
+.color-b {
+	color: rgba(246, 248, 249, 1);
+}
+
+.color-c {
+	color: rgba(37, 44, 50, 1);
+	display: flex;
+	align-items: center;
+  justify-content: center; 
+}
+
+.border-mel {
+	border-bottom: 2px solid #4094F7;
+}
+
+.border-log {
+	border-bottom: 1px solid rgba(14, 115, 246, .2);
+	border-style:dashed;
+	
+}
+
+/* .bg-mainColor {
+	background-color: #fff;
+} */
+
+.search {
+	width: 15vw;
+}
+
+.border-theme {
+	border: 1px solid #DDE2E4
+}
+
+.border-two {
+	border-bottom: 1px solid rgba(64, 148, 247, 0.3);
+}
+
+.flex-basis-one {
+	/* flex-basis: 45%; */
+	width: calc(740px + 420 * (100vw - 1440px) / 480);
+}
+
+.flex-basis-two {
+	flex-basis: 5,790%;
+}
+
+.flex-basis-three {
+	flex-basis: 12,43%;
+}
+
+.flex-basis-fourth {
+	width: calc(560px + 115 * (100vw - 1460px) / 460);
+}
+
+.flex-basis-five {
+	flex-basis: 2%;
+}
+
+.asd {
+	text-align: center;
+	vertical-align:baseline;
+}
+
+[data-title] {
+	position: relative; 
+	cursor: help; /* Меняем курсор на справочный */
+}
+[data-title]::after {
+	content: attr(data-title); /* Выводим текст из атрибута data-title */
+	position:absolute; /* Абсолютное позиционирование */
+	bottom: 1em;
+	 /* Положение подсказки */
+	opacity: 0; /* Скрываем подсказку, делая её прозрачной */
+	transition: 0.5s; /* Время появления подсказки */
+	pointer-events: none; /* Подсказка не реагирует на курсор */
+	background: rgba(0, 0, 0, 0.9); /* Синий цвет фона */
+	color: #ffffff; /* Белый цвет текста */
+	padding: 0.5em; /* Поля вокруг текста */
+	width: 10em;
+	font-family: reg, Arial, sans-serif;
+	font-weight: 400;
+	font-size: calc(11px + 6 * (100vw - 1024px) / 896);
+	padding-bottom: 27px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 9% 85%, 4.5% 89%, 0% 85%);
+}
+[data-title]:hover::after {
+	opacity: 1; /* Показываем подсказку */
+}
+
+.bg-doki {
+	background-color: rgba(238, 240, 242, 1);
+}
+
+/* .hr-line-one {
+	width: 25%;
+	margin: 0 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid #4094F7;
+}
+
+.hr-line-two {
+	width: 75%;
+	margin: 0 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid #D7EDFF;
+} */
+
+.ohidden {
+	opacity: 0;
+	display: none;
+}
+
+.im {
+	width: calc(16px + 10 * (100vw - 1440px) / 580);
+	height: calc(16px + 10 * (100vw - 1440px) / 580);
+}
+
+.archive-hidden {
+	display: none !important;
+}
+
+.archive-visible {
+	display: block;
+}
+
+[data-search]:not([data-search=""]) .card:not(.search-result) { display: none; }
+/* .container    { padding: 0.5rem 0; }
+.card         { padding: 0.5rem; border: 1px solid #ccc; }
+.card + .card { margin-top: -1px; }
+.card img     { display: none; }
+.card p       { margin: 0; } */
+input[type='date'] {
+	-moz-appearance: textfield; 
+
+	background: transparent; 
+	
+	color: rgba(255, 255, 255, 0.8);
+	
+	::-webkit-calendar-picker-indicator {
+			opacity: 0.7;
+	}
+}
+
+.m-nav {
+	margin-left: 354px;
+}
+
+.vb:hover  {
+	color:rgb(63, 52, 75);
+	border-color: rgba(28, 0, 69, 0.7);
+	transition: 0.3s;
+}
+
+.vn:hover {
+	color: rgb(21, 97, 197);
+	transition: 0.3s;
+}
+
+.vm:hover {
+	background-color: #3c89e1;
+	/* color:rgba(238, 240, 242, 1); */
+	transition: 0.3s;
+}
+
+.vv {
+	cursor: pointer;
+}
+
+.zz:hover {
+	border: 1px solid rgba(155, 207, 253, 1);
+}
+
+.card {
+	border: 1px solid rgba(155, 207, 253, 0);
+}
+
+.card:hover {
+	border: 1px solid rgba(155, 207, 253, 1);
+}
+
+.wer {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@media (min-width: 1794px) {
+	.im {
+		opacity: 0;
+	}
+}
+
+.imlog {
+	width: 16px;
+	height: 17px;
+}
+
+.sizi {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: -0.6%;
+}
+
+.sizi-two {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.sizi-three {
+	font-size: 16px;
+	font-weight: 400;
+}
